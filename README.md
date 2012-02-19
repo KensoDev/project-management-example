@@ -1,15 +1,14 @@
 # Project management sample project
 
 ## project strutrue
-Account
-	- subdomain
-	owner (user)
-	projects
-		todo
-			comments
-		files
-			versions
-
+	Account
+		- subdomain
+		owner (user)
+		projects
+			todo
+				comments
+			files
+				versions
 
 ## Working method
 	TDD (Rspec, Capybara, Chrome Driver, Factory Girl)
