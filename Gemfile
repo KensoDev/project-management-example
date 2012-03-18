@@ -23,6 +23,15 @@ end
 group :development, :test do
   gem "rspec"
   gem "rspec-rails"
+  gem "vcr"
+  gem "faker"
+  gem "spork-rails"
+  gem "factory_girl_rails"
+  gem "database_cleaner"
+  gem "guard"
+  gem "guard-rspec"
+  gem "growl"
+  gem "pry"
 end
 
 gem 'jquery-rails'
