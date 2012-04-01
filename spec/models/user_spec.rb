@@ -20,7 +20,5 @@ describe User do
 
       @other_user.save.should be_false
     end
-  end
-
-  
+  end  
 end
