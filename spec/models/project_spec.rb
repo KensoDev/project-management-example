@@ -40,4 +40,11 @@ describe Project do
       project.status.should eq(:active)
     end
   end
+  
+  describe "Association" do
+    it "should have a user" do
+      project = Project.new
+      project.should respond_to(:user)
+    end        
+  end
 end
