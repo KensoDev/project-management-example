@@ -15,7 +15,13 @@ describe Project do
 
   describe "Validations" do
     before(:each) do
-      @valid_params = { name: "Project 01", status: :active }
+      @user = Factory(:user)
+      @valid_params = { name: "Project 01", status: :active, user: @user }
+    end
+
+    it "should be saved with valid params" do
+      project = Project.new(@valid_params)
+      project.save.should be_true
     end
 
     it "should not save project without a name" do
@@ -36,7 +42,6 @@ describe Project do
 
     it "should save the status correctly to the database" do
       project = Project.new(@valid_params)
-      project.save
       project.status.should eq(:active)
     end
   end
