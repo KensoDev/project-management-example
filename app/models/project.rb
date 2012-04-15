@@ -1,5 +1,6 @@
 class Project < ActiveRecord::Base
   belongs_to :user
+  has_many :todos
 
   validates_presence_of :name, :status
   validates_presence_of :user
