@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :subdomain, :first_name, :last_name
 
-
   validates_uniqueness_of :subdomain
+
+  has_many :projects
 end
