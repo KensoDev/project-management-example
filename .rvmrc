@@ -1,1 +1,1 @@
-rvm --create use "ruby-1.9.3@project_manage"
+rvm --create use "ruby-1.9.3-p0@rproject_manage"
