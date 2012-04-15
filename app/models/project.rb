@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
   belongs_to :user
   has_many :todos
+  has_many :comments, :as => :item
 
   validates_presence_of :name, :status
   validates_presence_of :user
